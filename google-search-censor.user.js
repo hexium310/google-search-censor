@@ -116,6 +116,22 @@ const blacklist = [
   'https://myht.ru/question/*',
   'https://www.myht.ru/question/*',
   'https://qarchive.ru/*',
+  'https://code-examples.net/*/q/*',
+  'http://code.i-harness.com/*/q/*',
+  'https://code.i-harness.com/*/q/*',
+  'https://stackovernet.com/*/q/*',
+  'https://*.stackovernet.com/*/q/*',
+  'https://stackoverrun.com/*/q/*',
+  'https://365airsoft.com/*/questions/*',
+  'https://*.coredump.biz/questions/*',
+  'http://*.voidcc.com/question/*',
+  'https://*.voidcc.com/question/*',
+  'https://src-bin.com/*/q/*',
+  'https://xszz.org/*/question-*',
+  'https://www.xszz.org/*/question-*',
+  'https://*.developreference.com/article/*',
+  'https://*.develop-bugs.com/article/*',
+  'https://*.programqa.com/question/*',
 ]; // insert before
 
 const elements = document.getElementsByClassName("g");
