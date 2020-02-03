@@ -1,0 +1,25 @@
+name: Update blacklist
+
+on:
+  repository_dispatch:
+    types: [update]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout hexium310/google-search-censor
+        uses: actions/checkout@v2
+      - name: Update blacklist
+        run: sh update.sh
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v2
+        with:
+          committer: 'Hexin <hexium310@gmail.com>'
+          author: 'Hexin <hexium310@gmail.com>'
+          commit-message: 'Update blacklist'
+          title: 'Update blacklist by create-pull-request action'
+          branch-suffix: timestamp
+          token: ${{ secrets.GITHUB_TOKEN }}
