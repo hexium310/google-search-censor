@@ -116,6 +116,16 @@ const blacklist = [
   'https://myht.ru/question/*',
   'https://www.myht.ru/question/*',
   'https://qarchive.ru/*',
+  'https://*.switch-case.com/*',
+  'https://bildiredi.com/*',
+  'https://donolik.com/*',
+  'https://pytannie.com/*',
+  'https://sozdizimi.com/*',
+  'https://zapytay.com/*',
+  'https://coderoad.ru/*',
+  'https://qastack.ru/*',
+  'https://answeright.com/*',
+  'https://www.answeright.com/*',
 ]; // insert before
 
 const elements = document.getElementsByClassName("g");
