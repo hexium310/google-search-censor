@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         google-seach-censor
 // @include      /^(http|https):\/\/www\.google\..+\/search.*/
-// @version      0.1.1
+// @version      0.1.2
 // @namespace    hexium310
 // @author       Hexin
 // @downloadURL  https://raw.githubusercontent.com/hexium310/google-search-censor/master/google-search-censor.user.js
@@ -126,6 +126,7 @@ const blacklist = [
   'https://qastack.ru/*',
   'https://answeright.com/*',
   'https://www.answeright.com/*',
+  'https://riptutorial'
 ]; // insert before
 
 const elements = document.getElementsByClassName("g");
