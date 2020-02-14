@@ -127,6 +127,18 @@ const blacklist = [
   'https://answeright.com/*',
   'https://www.answeright.com/*',
   'https://riptutorial'
+  'https://ffff65535.com/*/q/*',
+  'https://www.it-swarm.xyz/*/*',
+  'https://www.it-swarm.asia/*/*',
+  'https://www.it-swarm.dev/*/*',
+  'http://uwenku.com/question/*',
+  'https://uwenku.com/question/*',
+  'http://*.uwenku.com/question/*',
+  'https://*.uwenku.com/question/*',
+  'https://brokencontrollers.com/faq/*',
+  'https://www.brokencontrollers.com/faq/*',
+  'https://itdaan.com/blog/*',
+  'https://www.itdaan.com/blog/*',
 ]; // insert before
 
 const elements = document.getElementsByClassName("g");
