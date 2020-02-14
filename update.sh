@@ -7,9 +7,9 @@ for url in $urls; do
     fi
 
     is_updated=1
-    gsed -i -e "/\/\/ insert before/i \ \ '$url'," google-search-censor.user.js
+    sed -i -e "/\/\/ insert before/i \ \ '$url'," google-search-censor.user.js
 done
 
 if (( is_updated )); then
-  gsed -i -e "s/\(\/\/ @version \+\).\+/\1${version%.*}.$(( ${version##*.} + 1 ))/" google-search-censor.user.js
+  sed -i -e "s/\(\/\/ @version \+\).\+/\1${version%.*}.$(( ${version##*.} + 1 ))/" google-search-censor.user.js
 fi
