@@ -13,7 +13,7 @@ jobs:
       - name: Checkout hexium310/google-search-censor
         uses: actions/checkout@v2
       - name: Update blacklist
-        run: sh update.sh
+        run: bash update.sh
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
         with:
