@@ -126,7 +126,7 @@ const blacklist = [
   'https://qastack.ru/*',
   'https://answeright.com/*',
   'https://www.answeright.com/*',
-  'https://riptutorial'
+  'https://riptutorial',
   'https://ffff65535.com/*/q/*',
   'https://www.it-swarm.xyz/*/*',
   'https://www.it-swarm.asia/*/*',
