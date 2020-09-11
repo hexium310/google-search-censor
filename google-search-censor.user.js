@@ -156,7 +156,7 @@ for (const element of elements) {
       continue;
     }
 
-    element.firstElementChild.appendChild(hiddenContent);
+    element.appendChild(hiddenContent);
     element.getElementsByClassName('rc')[0].remove();
   }
 }
