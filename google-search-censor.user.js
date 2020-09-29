@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         google-seach-censor
 // @include      /^(http|https):\/\/www\.google\..+\/search.*/
-// @version      0.1.5
+// @version      0.1.6
 // @namespace    hexium310
 // @author       Hexin
 // @downloadURL  https://raw.githubusercontent.com/hexium310/google-search-censor/master/google-search-censor.user.js
@@ -141,6 +141,7 @@ const blacklist = [
   'https://www.itdaan.com/blog/*',
   'https://legkovopros.ru/questions/*',
   'https://www.366service.com/jp/qa/*',
+  'http://www.366service.com/jp/qa/*',
   'https://living-sun.com/ja/architecture/*',
   'https://qa.codeflow.site/questions/*',
 ]; // insert before
