@@ -145,10 +145,10 @@ const blacklist = [
   'https://qa.codeflow.site/questions/*',
 ]; // insert before
 
-const elements = document.getElementsByClassName("g");
+const elements = document.querySelectorAll('[class="g"]');
 
 for (const element of elements) {
-  const link = element.querySelector('a[ping]').href;
+  const link = element.querySelector('a[ping]').href.replace(/#:~:text=.*/, '');
   const hiddenContent = document.createElement('div');
   hiddenContent.insertAdjacentHTML('beforeend', 'This content was hidden.<br>');
   hiddenContent.insertAdjacentHTML('beforeend', `<cite>${ link }</cite>`);
