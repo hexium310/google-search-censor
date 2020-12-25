@@ -144,6 +144,8 @@ const blacklist = [
   'http://www.366service.com/jp/qa/*',
   'https://living-sun.com/ja/architecture/*',
   'https://qa.codeflow.site/questions/*',
+  'https://qastack.jp/*',
+  'https://www.it-swarm-ja.tech/*',
 ]; // insert before
 
 const elements = document.querySelectorAll('[class="g"]');
