@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         google-seach-censor
 // @include      /^(http|https):\/\/www\.google\..+\/search.*/
-// @version      0.1.6
+// @version      0.1.7
 // @namespace    hexium310
 // @author       Hexin
 // @downloadURL  https://raw.githubusercontent.com/hexium310/google-search-censor/master/google-search-censor.user.js
@@ -153,8 +153,12 @@ const elements = document.querySelectorAll('[class="g"]');
 for (const element of elements) {
   const link = element.querySelector('a[ping]').href.replace(/#:~:text=.*/, '');
   const hiddenContent = document.createElement('div');
+  const cite = document.createElement('cite');
+  cite.style.cssText = 'display: block; width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;'
+  cite.insertAdjacentHTML('beforeend', link);
+
   hiddenContent.insertAdjacentHTML('beforeend', 'This content was hidden.<br>');
-  hiddenContent.insertAdjacentHTML('beforeend', `<cite>${ link }</cite>`);
+  hiddenContent.insertAdjacentElement('beforeend', cite);
 
   for (const blacklistLink of blacklist) {
     const blacklistRegExp = new RegExp(blacklistLink.replace(/(\.|\/)/g, '\\$1').replace(/\*/g, '.*'))
