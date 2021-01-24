@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         google-seach-censor
+// @name         google-search-censor
 // @include      /^(http|https):\/\/www\.google\..+\/search.*/
 // @version      0.1.7
 // @namespace    hexium310
