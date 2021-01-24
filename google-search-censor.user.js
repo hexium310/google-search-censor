@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         google-search-censor
 // @include      /^(http|https):\/\/www\.google\..+\/search.*/
-// @version      0.1.7
+// @version      0.1.8
 // @namespace    hexium310
 // @author       Hexin
 // @downloadURL  https://raw.githubusercontent.com/hexium310/google-search-censor/master/google-search-censor.user.js
@@ -167,6 +167,6 @@ for (const element of elements) {
     }
 
     element.appendChild(hiddenContent);
-    element.getElementsByClassName('rc')[0].remove();
+    element.querySelector('div').remove();
   }
 }
